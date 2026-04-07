@@ -1,0 +1,66 @@
+/**
+ * BASE.CSS
+ * Este archivo contiene los estilos base del proyecto: resets CSS, 
+ * tipografía global, colores y variables de diseño.
+ * Se carga primero para establecer una base sólida y consistente.
+ */
+
+/* Reset básico */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+ul[class], ol[class] {
+  padding: 0;
+  list-style: none;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Tipografía global */
+:root {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  color: #222;
+  background-color: #f7f7f7;
+  line-height: 1.6;
+}
+body {
+  min-height: 100vh;
+  background: #f7f7f7;
+  color: #1f1f1f;
+  font-family: inherit;
+  text-rendering: optimizeLegibility;
+}
+
+/* Colores */
+:root {
+  --color-bg: #f7f7f7;
+  --color-surface: #ffffff;
+  --color-primary: #1d4ed8;
+  --color-primary-strong: #1e40af;
+  --color-muted: #64748b;
+  --color-border: #d1d5db;
+  --color-shadow: rgba(15, 23, 42, 0.08);
+  --color-success: #10b981;
+  --color-danger: #ef4444;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+}

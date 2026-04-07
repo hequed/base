@@ -1,0 +1,74 @@
+/**
+ * COMPONENTS.CSS
+ * Este archivo contiene los estilos de componentes reutilizables
+ * como botones, cards, inputs y otros elementos que se repiten 
+ * en diferentes páginas del proyecto.
+ */
+
+/* Botones */
+.button,
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  background: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover,
+button:hover {
+  background: var(--color-primary-strong);
+  transform: translateY(-1px);
+}
+
+.button-secondary {
+  background: #fff;
+  color: var(--color-primary);
+  border-color: var(--color-border);
+}
+
+/* Cards */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  box-shadow: 0 12px 30px var(--color-shadow);
+  padding: 1.5rem;
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  color: var(--color-muted);
+}
+
+/* Inputs */
+.input,
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  background: #fff;
+  color: #111827;
+}
+
+.input:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
